@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <title>Portfolio Felix Amon Sitinjak</title>
+  <meta name="description" content="Portfolio Informatika - Tentang Saya, Project, Skill, Sertifikat, dan Kontak." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <header class="site-header" id="home">
+    <div class="container nav-wrap">
+      <a href="#home" class="brand">
+        <span class="brand-badge">FAX</span>
+        <span class="brand-name">Felix Amon Sinjak</span>
+      </a>
+      <nav class="nav" id="nav">
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle Menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-list" id="navList">
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#portfolio">Portofolio</a></li>
+          <li><a href="#skills">Skill</a></li>
+          <li><a href="#certificates">Sertifikat</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" aria-label="Hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1 class="title reveal-up">Halo, saya <span class="grad">Felix Amon Sitinjak</span></h1>
+          <p class="subtitle reveal-up delay-1">Mahasiswa Aktif <b>Teknik Informatika</b> yang tertarik pada <b>Front End Developer</b>.</p>
+          <div class="cta reveal-up delay-2">
+            <a class="btn primary" href="#portfolio">Lihat Proyek</a>
+            <a class="btn ghost" href="#contact">Kontak Saya</a>
+          </div>
+          <div class="social reveal-up delay-3">
+            <a aria-label="LinkedIn" href="https://www.linkedin.com/in/felix-amon-sitinjak-a1697a369?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"_blank" rel="noopener">
+              <svg class="icon"><use href="#i-linkedin"/></svg>
+            </a>
+            <a aria-label="Instagram" href="https://www.instagram.com/amnlix21?igsh=MTh3YWg0bHlkYzR6dA==" target="_blank" rel="noopener">
+              <svg class="icon"><use href="#i-instagram"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="card-3d reveal-up delay-2">
+            <div class="card-layer l1"></div>
+            <div class="card-layer l2"></div>
+            <div class="card-layer l3"></div>
+            <div class="card-core">
+              <img alt="Foto pdh" src="Foto pdh.jpg"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="scroll-indicator" href="#about" aria-label="Scroll">
+        <span></span>
+      </a>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div class="reveal-up">
+          <h2 class="section-title">Tentang Saya</h2>
+          <p>Halo, nama saya Felix Amon Sitinjak, mahasiswa aktif semester 4 Program Studi Teknik Informatika Universitas Pelita Bangsa. Saya memiliki minat dan kemampuan dalam bidang Web Development, serta terbiasa mengembangkan website menggunakan teknologi front-end dan back-end. Saya menguasai HTML, CSS, JavaScript, Python, dan PHP, serta memiliki pemahaman dasar mengenai database dan konsep pemrograman terstruktur. Selain itu, saya merupakan alumni SMK Mitra Industri MM2100 jurusan Teknik Elektronika Industri. Saat ini, saya aktif di HIMATIF UPB (Himpunan Mahasiswa Teknik Informatika Universitas Pelita Bangsa) sebagai anggota muda Departemen Hubungan Internal & Hubungan Eksternal (Hubin & Hubeks). Saya mampu bekerja secara mandiri maupun dalam tim, serta memiliki semangat belajar yang tinggi terhadap perkembangan teknologi baru.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section alt">
+      <div class="container">
+        <h2 class="section-title center reveal-up">Portofolio</h2>
+        <div class="filter reveal-up">
+          <button class="chip active" data-filter="all">Semua</button>
+          <button class="chip" data-filter="web">Web</button>
+          <button class="chip" data-filter="iot">IOT</button>
+        </div>
+        <div class="grid portfolio-grid">
+          <article class="card project reveal-up" data-cat="web">
+            <img src="Webkelas.png" alt="Webkelas"/>
+            <div class="card-body">
+              <h3>Website Kelas</h3>
+              <p>Web untuk mengelola daftar mahasiswa, struktur kelas, jadwal kuliah dan galeri.</p>
+              <div class="tags"><span>PHP</span><span>Phpmyadmin</span></div>
+            </div>
+          </article>
+          <article class="card project reveal-up" data-cat="web">
+            <img src="webresto.png" alt="webresto"/>
+            <div class="card-body">
+              <h3>Website Kasir Resto</h3>
+              <p>Web untuk mengelola pemesanan makanan dan memproses pembayaran</p>
+              <div class="tags"><span>PHP</span><span>Phpmyadmin</span></div>
+            </div>
+          </article>
+          <article class="card project reveal-up" data-cat="iot">
+            <img src="IoT jadi.jpg" alt="IoT jadi"/>
+            <div class="card-body">
+              <h3>IoT Monitoring Suhu & Kelembapan</h3>
+              <p>Menggunakan ESP8266 dan platform Cayenne untuk monitoring suhu dan kelembapa.</p>
+              <div class="tags"><span>ESP8266</span><span>Cayenne</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title center reveal-up">Skill</h2>
+        <div class="skills-grid">
+          <div class="skill reveal-up">
+            <div class="skill-top"><span>Arduino Uno</span><b>80%</b></div>
+            <div class="bar"><span style="--v:80%"></span></div>
+          </div>
+          <div class="skill reveal-up">
+            <div class="skill-top"><span>MySQL</span><b>80%</b></div>
+            <div class="bar"><span style="--v:80%"></span></div>
+          </div>
+          <div class="skill reveal-up">
+            <div class="skill-top"><span>HTML/CSS</span><b>90%</b></div>
+            <div class="bar"><span style="--v:90%"></span></div>
+          </div>
+          <div class="skill reveal-up">
+            <div class="skill-top"><span>PHP</span><b>80%</b></div>
+            <div class="bar"><span style="--v:80%"></span></div>
+          </div>
+          <div class="skill reveal-up">
+            <div class="skill-top"><span>Python</span><b>80%</b></div>
+            <div class="bar"><span style="--v:80%"></span></div>
+          </div>
+          <div class="skill reveal-up">
+            <div class="skill-top"><span>JavaScript</span><b>90%</b></div>
+            <div class="bar"><span style="--v:90%"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificates" class="section alt">
+      <div class="container">
+        <h2 class="section-title center reveal-up">Sertifikat</h2>
+        <div class="certs">
+          <div class="cert-card reveal-up">
+            <img src="Sertifikat Intensive Camp - Felix Amon Sitinjak_page-0001.jpg" alt="Sertifikat 1"/>
+            <div class="cert-meta">
+              <h3>Intensive Camp Pemprograman Python</h3>
+              <span>2025</span>
+            </div>
+          </div>
+          <div class="cert-card reveal-up">
+            <img src="Felix Amon Sitinjak  - E-Certif Website Development_ Front End MySkill_page-0001 (1).jpg" alt="Sertifikat 2"/>
+            <div class="cert-meta">
+              <h3>Website Development : Frontend</h3>
+              <span>2025</span>
+            </div>
+          </div>
+          <div class="cert-card reveal-up">
+            <img src="Sertifikat_Introduction to Modern AI - BPPTIK, Indonesia_Felix Amon Sitinjak_page-0001.jpg" alt="Sertifikat 3"/>
+            <div class="cert-meta">
+              <h3>Introduction to Modern AI</h3>
+              <span>2025</span>
+            </div>
+          </div>
+          <div class="cert-card reveal-up">
+            <img src="Sertifikat Uji Kompetensi IOT_page-0001.jpg" alt="Sertifikat 4"/>
+            <div class="cert-meta">
+              <h3>IOT</h3>
+              <span>2023</span>
+            </div>
+          </div>
+          <div class="cert-card reveal-up">
+            <img src="E-Certificate Web Development - Felix Amon Sitinjak_page-0001.jpg" alt="Sertifikat 5"/>
+            <div class="cert-meta">
+              <h3>Web Development</h3>
+              <span>2025</span>
+            </div>
+          </div>
+          <div class="cert-card reveal-up">
+            <img src="1763364087415.jpg" alt="Sertifikat 6"/>
+            <div class="cert-meta">
+              <h3>AI Training</h3>
+              <span>2025</span>
+            </div>
+          </div>
+          <div class="cert-card reveal-up">
+            <img src="Sertifikat_FELIX AMON SITINJAK_Intermediate Project Management_page-0001.jpg" alt="Sertifikat 7"/>
+            <div class="cert-meta">
+              <h3>Intermediate Project Management</h3>
+              <span>2025</span>
+            </div>
+          </div>
+          <div class="cert-card reveal-up">
+            <img src="312410063_page-0001.jpg" alt="Sertifikat 8"/>
+            <div class="cert-meta">
+              <h3>Koordinator Humas Musyawarah Himpunan Teknik INformatika UPB</h3>
+              <span>2025</span>
+            </div>
+          </div>
+          <div class="cert-card reveal-up">
+            <img src="Goggle gemini.jpeg" alt="Sertifikat 9"/>
+            <div class="cert-meta">
+              <h3>Google Gemini Arena Workshop Innovation Lab: From Prompt to Slide</h3>
+              <span>2026</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title center reveal-up">Kontak Saya</h2>
+        <form class="contact-form reveal-up" action="https://formspree.io/f/your-id" method="POST">
+          <div class="grid-2">
+            <label>
+              <span>Nama</span>
+              <input type="text" name="name" placeholder="Nama Anda" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" placeholder="email@contoh.com" required />
+            </label>
+          </div>
+          <label>
+            <span>Subjek</span>
+            <input type="text" name="subject" placeholder="Perihal" />
+          </label>
+          <label>
+            <span>Pesan</span>
+            <textarea name="message" rows="5" placeholder="Tulis pesan Anda..." required></textarea>
+          </label>
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Kirim</button>
+            <span class="form-note">Atau kirim email ke <a href="mailto:email@contoh.com">email@contoh.com</a></span>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container foot">
+      <p>© <span id="year"></span> Portofolio Felix Amon Sitinjak</p>
+      <div class="foot-links">
+        <a href="#home">Ke Atas</a>
+        <a href="#portfolio">Proyek</a>
+        <a href="#contact">Kontak</a>
+      </div>
+    </div>
+  </footer>
+
+  <svg style="display:none" aria-hidden="true">
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.7.5.09.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05a9.3 9.3 0 0 1 2.5-.34c.85 0 1.7.11 2.5.34 1.9-1.32 2.74-1.05 2.74-1.05.56 1.41.21 2.45.11 2.71.64.72 1.03 1.63 1.03 2.75 0 3.95-2.34 4.82-4.57 5.08.36.31.68.92.68 1.86 0 1.34-.01 2.42-.01 2.75 0 .27.18.59.69.49A10.03 10.03 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 6.5a1.94 1.94 0 1 1 0-3.88 1.94 1.94 0 0 1 0 3.88ZM3.5 8.25h6.89V21H3.5V8.25Zm10.5 0h6.67V12c0 4.91-2.61 6.86-6.11 6.86-1.76 0-3-.69-3.56-1.74h-.05V21H4v-12.75h6.89v1.72h.05c.96-1.58 2.34-1.97 3.61-1.97Z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2.2a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6Zm5.5-.9a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2Z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5L4 8V6l8 5 8-5v2Z"/></symbol>
+  </svg>
+
+  <script src="script.js"></script>
+</body>
+</html>
